@@ -18,6 +18,13 @@ sudo ./installer.sh && sudo ./setup.sh # run both scripts with super user
 # like python3, pip, proxychains etc
 ```
 
+### Add inside of /etc/profile by running 'edit profile.sh'
+```bash
+# put at the very very bottom
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libproxychains.so.4
+export PROXYCHAINS_CONF_FILE=/etc/proxychains.conf
+```
+
 ### Download setup.sh. 
 This shell script downloads tornet using pip and creates a new python script for tornet called "tornet.py" at /usr/local/bin/ and will also install python3 if it is not 
 installed same for pip.
