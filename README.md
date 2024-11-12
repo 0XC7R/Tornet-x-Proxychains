@@ -6,6 +6,18 @@ A repo to help users implement system wide proxy chaining using tornet which rou
 Follow the write up for help:
 [medium.com/@0xc7r/](https://medium.com/@0xc7r/using-tornet-w-proxychains-for-a-system-wide-proxy-connection-5df63612c743?postPublishedType=initial)
 
+```bash
+git clone https://github.com/0XC7R/Tornet-x-Proxychains # clone it
+cd Tornet-x-Proxychains # go to the path we cloned
+chmod +x 'installer.sh' # allow us to execute the sh scripts
+chmod +x 'setup.sh' # allow us to execute the sh scrips
+chmod +x 'edit profile.sh' # user later
+chmod +x 'edit proxychain.sh' # used later
+sudo ./installer.sh && sudo ./setup.sh # run both scripts with super user
+# We run the installer first so we can install needed packages 
+# like python3, pip, proxychains etc
+```
+
 ### Download setup.sh. 
 This shell script downloads tornet using pip and creates a new python script for tornet called "tornet.py" at /usr/local/bin/ and will also install python3 if it is not 
 installed same for pip.
