@@ -30,7 +30,7 @@ This shell script downloads tornet using pip and creates a new python script for
 installed same for pip.
 
 ### Testing after successful run of installer/setup
-```
+```bash
 curl -X GET https://api.ipify.org # request our ip from the api
 # Example output 192.168.0.154
 ```
