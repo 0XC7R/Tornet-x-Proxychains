@@ -25,6 +25,14 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libproxychains.so.4
 export PROXYCHAINS_CONF_FILE=/etc/proxychains.conf
 ```
 
+### Cant access localhost or 127.0.0.1 servers?
+Open your proxychains configuration file and add the following line(s):
+```bash
+# put directly above '[ProxyList]'
+localnet 127.0.0.0/255.0.0.0 # allows you to connect to anything on those ips while keeping you connected to your proxies
+
+```
+
 ### Download setup.sh. 
 This shell script downloads tornet using pip and creates a new python script for tornet called "tornet.py" at /usr/local/bin/ and will also install python3 if it is not 
 installed same for pip.
