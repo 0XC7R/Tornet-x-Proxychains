@@ -30,6 +30,10 @@ Open your proxychains configuration file and add the following line(s):
 ```bash
 # put directly above '[ProxyList]'
 localnet 127.0.0.0/255.0.0.0 # allows you to connect to anything on those ips while keeping you connected to your proxies
+# This can expose your home ip to applications.
+# I recommend adding 'proxychains4' before the app command, running all traffic through the tor nodes like wanted
+# Electrum apps not starting then add: --no-sandbox --in-process-gpu
+# ^ Will usually fix electrum apps breaking
 
 ```
 
