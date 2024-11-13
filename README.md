@@ -6,8 +6,8 @@ A repo to help users implement system wide proxy chaining using tornet which rou
 Follow the write up for help:
 [medium.com/@0xc7r/](https://medium.com/@0xc7r/using-tornet-w-proxychains-for-a-system-wide-proxy-connection-5df63612c743?postPublishedType=initial)
 
-Issues with electron apps and starting them?
-[proxychains4 issue](https://github.com/rofl0r/proxychains-ng/issues/586)
+Issues with electron apps and starting them: 
+[proxychains4 issue](https://github.com/rofl0r/proxychains-ng/issues/586) <br>
 You can try to add `--no-sandbox --in-process-gpu` to attempt to get the electron app to boot however some apps like discord will boot and then close which will require a flatpak installation.
 
 ```bash
